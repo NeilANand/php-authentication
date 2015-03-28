@@ -3,10 +3,10 @@ namespace auth;
 
 class authentication {
     /*
-    * Version 0.8 - Still requires logout method and a method to authenticate users on subsiquent pages after
-    * inisial login.  If setLoginSession lastActive is false log the user out.
+    * Version 0.8 - Still requires logout method and a method to authenticate users on subsequent pages after
+    * initial login.  If setLoginSession lastActive is false log the user out.
 
-    * Below is a list of all the elements in the array that need to be passed as an argument to the cosntructor of
+    * Below is a list of all the elements in the array that need to be passed as an argument to the constructor of
     * this class.  Below that is an example of how to code the array, you can copy and paste the example and just
     * change the values.
 
@@ -14,7 +14,7 @@ class authentication {
     *
     * username_field (string) - The table field that contains the username. - REQUIRED
     *
-    * pasword_field (string) - The table field that contains the password. - REQUIRED
+    * password_field (string) - The table field that contains the password. - REQUIRED
     *
     * loginTimestamp_field (string) - The table field used to record the users last login. - OPTIONAL
     *
@@ -37,7 +37,7 @@ class authentication {
         out'. - OPTIONAL (default = no limit)
     *
     * timeout_page (string) - The page & path the user is sent to if they have been inactive to long. - OPTIONAL but
-        requied if session_timeout has a value set
+        required if session_timeout has a value set
     *
     * hash (string) - Type of hash the password is stored in, "print_r(hash_algos());" lists all hashing options. - OPTIONAL (default is no hash)
     *
